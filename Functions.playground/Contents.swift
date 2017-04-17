@@ -1,16 +1,16 @@
-func printAge(name: String) {
+func printAge(_ name: String) {
     print("\(name) is 29")
 }
 
 printAge("Adam")
 
 
-func happyBirthday(age: Int) {
+func happyBirthday(_ age: Int) {
     print("Happy birthday #\(age)!")
 }
 
 
-func getAge(name: String) -> Int {
+func getAge(_ name: String) -> Int {
     return 29
 }
 
@@ -27,7 +27,7 @@ var friendAge = getAge(friend)
 happyBirthday(friendAge)
 
 
-func birthdayGreeting(age: Int) -> String {
+func birthdayGreeting(_ age: Int) -> String {
     return "Happy birthday #\(age)!"
 }
 
@@ -42,4 +42,4 @@ func getAgeAndCongratulate(name: String) -> Int {
 }
 
 let friend2 = "Pete"
-var friend2Age = getAgeAndCongratulate(friend2)
+var friend2Age = getAgeAndCongratulate(name: friend2)
